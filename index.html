@@ -23,16 +23,30 @@
         .game-card {
             background: linear-gradient(135deg, #111 0%, #1a1a2e 100%);
             border: 3px solid #ffd700; border-radius: 12px; padding: 30px;
-            box-shadow: 0 0 30px rgba(255, 215, 0, 0.15); margin-top: 40px;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.15); margin-bottom: 5px;
         }
         .game-logo { color: #ffd700; font-size: 32px; font-weight: bold; margin-bottom: 10px; }
         .release-date { color: #fff; font-size: 18px; font-weight: bold; background: #ff3333; display: inline-block; padding: 5px 15px; border-radius: 5px; margin: 15px 0; }
+        
+        /* Meet The Developers (About Us) Card */
+        .about-card {
+            background: linear-gradient(135deg, #09090f 0%, #0d1a10 100%);
+            border: 3px solid #333; border-radius: 12px; padding: 30px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.05); margin-top: 40px;
+            text-align: left;
+        }
+        .about-title { color: #fff; font-size: 24px; font-weight: bold; border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 0; }
+        .dev-split { display: flex; justify-content: space-between; margin-top: 20px; gap: 20px; }
+        .dev-profile { flex: 1; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; }
+        .dev-name-zakir { color: #00bcd4; font-weight: bold; font-size: 18px; margin: 0 0 10px 0; }
+        .dev-name-muawiya { color: #2ecc71; font-weight: bold; font-size: 18px; margin: 0 0 10px 0; }
         
         /* Interactive Link Buttons */
         .btn {
             display: inline-block; padding: 15px 35px; margin: 15px; font-size: 18px;
             font-weight: bold; font-family: monospace; text-decoration: none;
             border-radius: 8px; transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
         }
         .btn-play { background-color: #ffd700; color: #000; border: 2px solid #fff; }
         .btn-wiki { background-color: #333; color: #fff; border: 2px solid #555; }
@@ -45,11 +59,11 @@
 
     <header>
         <div class="studio-title">BROTHERS PLAYTIME</div>
-        <div class="sub-tag">JUST 2 BROTHERS MAKING GAMES</div>
+        <div class="sub-tag">JUST 2 BROTHERS MAKING AND DEVELOPING GAMES</div>
     </header>
 
     <div class="container">
-        <p style="color: #aaa; font-size: 16px;">Welcome to the official portal of Brothers Playtime, founded and operated by developers Zakir and Muawiya.</p>
+        <p style="color: #aaa; font-size: 16px;">Official portal of Brothers Playtime, an independent studio engineering immersive, episodic mascot-horror worlds directly in your web browser.</p>
 
         <!-- Featured Project: Sunny Storytime -->
         <div class="game-card">
@@ -63,13 +77,40 @@
             <br>
 
             <!-- Navigation Links -->
-            <a href="https://zakirm123.github.io/Sunny-Storytime/" class="btn btn-play">LAUNCH 3D GAMEPLAY</a>
+            <a href="https://github.com" class="btn btn-play">LAUNCH 3D GAMEPLAY</a>
             <a href="https://fandom.com" class="btn btn-wiki">EXPLORE LORE WIKI</a>
-        </a>
+        </div>
+
+        <!-- NEW: Official About Us Section (Meet the Team) -->
+        <div class="about-card">
+            <div class="about-title">ℹ️ MEET THE DEVELOPERS</div>
+            <p style="color: #aaa; font-size: 14px; line-height: 1.5; margin: 0;">
+                Brothers Playtime is a collaborative team formed by two brothers dedicated to pushing the technical boundaries of browser-based 3D engines. We handle 100% of our production, engine scripts, asset styling, and storytelling together via GitHub.
+            </p>
+            
+            <div class="dev-split">
+                <!-- Zakir's Profile -->
+                <div class="dev-profile" style="border-top: 4px solid #00bcd4;">
+                    <div class="dev-name-zakir">ZAKIR</div>
+                    <p style="color: #ccc; font-size: 13px; margin: 0; line-height: 1.4;">
+                        Hey, Im Zakir. Co-founder and lead logic programmer. I/Zakir constructs the core architectural layers, calculates camera tracking, optimizes movement variables, and scripts smooth locomotion for both PC and mobile touch interfaces.
+                    </p>
+                </div>
+                
+                <!-- Muawiya's Profile -->
+                <div class="dev-profile" style="border-top: 4px solid #2ecc71;">
+                    <div class="dev-name-muawiya">MUAWIYA</div>
+                    <p style="color: #ccc; font-size: 13px; margin: 0; line-height: 1.4;">
+                       Hi,Im Muawiya. Co-founder, creative architect, and lore engineer. I/Muawiya builds out asset logic layouts, details environmental scripts, designs branding imagery, and constructs the deep backstory mechanics of our horror universe.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <footer>
-        &copy; 2026 Brothers Playtime Corporation. Developed by Zakir & Muawiya.
+        &copy; 2026 Brothers Playtime Corporation. Coded and maintained by Zakir & Muawiya via GitHub.
     </footer>
 
 </body>
